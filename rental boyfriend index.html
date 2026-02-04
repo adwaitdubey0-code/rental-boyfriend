@@ -1,0 +1,146 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header { <link rel="stylesheet" href="style.css">
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+section {
+    background: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Meetup Companion</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; color: #333; }
+        header { background-color: #007bff; color: white; text-align: center; padding: 20px; }
+        section { max-width: 800px; margin: 20px auto; padding: 20px; background: white; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        h1, h2 { color: #007bff; }
+        ul { list-style-type: none; padding: 0; }
+        li { margin: 10px 0; }
+        form { display: flex; flex-direction: column; }
+        label { margin-top: 10px; }
+        input, select, textarea { padding: 8px; margin-top: 5px; border: 1px solid #ccc; border-radius: 4px; }
+        button { margin-top: 20px; padding: 10px; background-color: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer; }
+        button:hover { background-color: #0056b3; }
+        footer { text-align: center; padding: 10px; background-color: #007bff; color: white; }
+        .checkbox { display: flex; align-items: center; }
+        .checkbox input { margin-right: 10px; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Personal Meetup Companion – Spend Quality Time, Talk, Travel, Events</h1>
+        <p>A respectful companion for your special day – conversations, outings & memories.</p>
+        <p>Short intro: Hi, I’m AD. I offer respectful companionship for meetups, events, travel & quality time.</p>
+    </header>
+
+    <section id="services">
+        <h2>Services</h2>
+        <ul>
+            <li>☕ Coffee / Cafe Meetup (2–4 hrs)</li>
+            <li>🎬 Movie / Mall outing</li>
+            <li>🎉 Event companion</li>
+            <li>✈️ Travel companion (with rules)</li>
+            <li>🕒 One-day companionship (max hours clearly mention)</li>
+        </ul>
+    </section>
+
+    <section id="apply-form">
+        <h2>Apply Form (Girls Form)</h2>
+        <form action="#" method="post"> <!-- Replace # with a form handler URL if needed -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="age">Age (18+ mandatory):</label>
+            <input type="number" id="age" name="age" min="18" required>
+
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" required>
+
+            <label for="purpose">Purpose of meetup:</label>
+            <textarea id="purpose" name="purpose" required></textarea>
+
+            <label for="date-time">Date & Time:</label>
+            <input type="datetime-local" id="date-time" name="date-time" required>
+
+            <label for="location">Public or Private location (rules ke sath):</label>
+            <select id="location" name="location" required>
+                <option value="public">Public</option>
+                <option value="private">Private</option>
+            </select>
+
+            <label for="instagram">Instagram / WhatsApp (optional):</label>
+            <input type="text" id="instagram" name="instagram">
+
+            <div class="checkbox">
+                <input type="checkbox" id="agreement" name="agreement" required>
+                <label for="agreement">I understand this is a non-sexual companionship service.</label>
+            </div>
+
+            <button type="submit">Submit Application</button>
+        </form>
+    </section>
+
+    <section id="pricing">
+        <h2>Pricing</h2>
+        <p>Transparent pricing (24hour/1day): Advance payment rule only - 2999</p>
+        <p>Cancellation policy: 500 return to cancel ❌</p>
+    </section>
+
+    <section id="rules-safety">
+        <h2>Rules & Safety (Must)</h2>
+        <ul>
+            <li>ID verification</li>
+            <li>Public place preference</li>
+            <li>No alcohol/drugs pressure</li>
+            <li>Right to cancel anytime</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>Contact:</p>
+        <p>WhatsApp Business: <a href="https://wa.me/9755666872" target="_blank">9755666872</a></p>
+        <p>Email: <a href="mailto:adwaitdubey0@gmail.com">adwaitdubey0@gmail.com</a></p>
+        <p>Instagram: <a href="https://www.instagram.com/adwait_dubey_70?igsh=MWE5eTkzM2xlZGxkNQ==" target="_blank">@adwait_dubey_70</a></p>
+    </footer>
+</body>
+</html>
